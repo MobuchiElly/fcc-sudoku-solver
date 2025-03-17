@@ -28,7 +28,8 @@ function fillpuzzle(data) {
 }
 
 async function getSolved() {
-  const stuff = {"puzzle": textArea.value}
+  const stuff = {"puzzle": textArea.value}; 
+  console.log("stuff:", stuff);
   const data = await fetch("/api/solve", {
     method: "POST",
     headers: {
